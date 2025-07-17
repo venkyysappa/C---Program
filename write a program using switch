@@ -1,0 +1,62 @@
+#include<stdio.h>
+main()
+{
+	int n,i,r,sum=0,a;
+	do
+	{
+	printf("select the choice");
+	scanf("%d",&n);
+	switch(n)
+	{
+			case 1:
+			
+	printf("enter number ");
+	scanf("%d",&a);
+	int f=1;
+	for(i=1;i<=a;i++)
+	f=f*i;
+	printf("%d\n",f);	
+	break;
+			case 2:
+			
+	printf("enter number ");
+	scanf("%d",&a);
+	int count=0;
+	for(i=1;i<=a;i++)
+	{
+		if(a%i==0)
+		count++;
+	}
+	if(count==2)
+	printf("prime\n");
+	else
+	printf("not prime\n")	;
+	break;
+	
+		case 3:
+			
+	printf("enter number ");
+	scanf("%d",&a);
+	a%2==0 ? 
+	printf("even\n") : printf("odd\n");
+	
+	break;
+		case 4:
+			
+	printf("enter number ");
+	scanf("%d",&a);
+	while(a>0)
+	{
+		r=a%10;
+		sum+=r;
+		a/=10;
+	}
+printf("%d\n",sum);
+	
+	break;
+	
+	
+}
+}while(n<5);
+printf("Exit bcz u selected wrong choice ");
+}
