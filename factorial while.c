@@ -7,9 +7,10 @@ main()
 	if(n!=0)
 	{
 		for(i=1;i<=n;i++)
-		f=f*1;
+		f=f*i;
 		printf("%d",f);
 	}
 	else
 	printf("1");
 }
+
